@@ -23,7 +23,7 @@ async def get_db() -> AsyncSession:
 
 async def init_db():
     """Create all tables on startup."""
-    from models import user, job  # noqa — import to register models
+    from core import user, job  # noqa — import to register models
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
     
