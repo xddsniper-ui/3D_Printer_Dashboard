@@ -20,7 +20,7 @@ class Settings(BaseSettings):
     DATABASE_URL: str = "sqlite+aiosqlite:///./printfarm.db"
 
     # CORS
-    ALLOWED_ORIGINS: List[str] = ["http://localhost:8000", "http://localhost:3000"]
+    ALLOWED_ORIGINS: List[str] = ["http://localhost:8000", "http://localhost:3000", "https://id-preview--8fdb677c-37e4-47cf-8fb6-ef65a7eb2e63.lovable.app"]
 
     # PrusaLink instances — one entry per Pi
     # Each Pi manages 2 printers. PrusaLink exposes them on different ports or paths.
